@@ -1,9 +1,14 @@
 body {
     margin: 0; padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 
-.lato {
-    font-family: 'Lato', sans-serif;
+.serif {
+    font-family: 'Playfair', serif;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 a {
@@ -52,9 +57,12 @@ nav {
     padding: 100px 0 20px;
 }
 
+.hero img {
+    margin: 0 70px 0 -80px;
+}
+
 .hero .content h1 {
     font-size: 76px;
-    font-weight: bold;
     color: rgba(0,0,0,0.8);
     margin: 0 0 40px;
 }
@@ -77,10 +85,38 @@ form .form-input {
 }
 
 .btn {
-
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 14px;
+    padding: 14px 30px;
 }
 
 .btn-blue {
+    background-color: #3F46AD;
+    color: rgba(255,255,255, 0.9);
+    transition: background-color 100ms ease-in-out;
+}
+
+.btn-blue:hover {
     background-color: #1D2A9D;
-    color: rgba(255,255,255, 0.8);
+    cursor: pointer;
+}
+
+.hero .content small {
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    letter-spacing: .7px;
+}
+
+.hero .content small a {
+    color: #3F46AD;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #3F46AD;
+}
+
+.hero .content small a:hover {
+    color: #1D2A9D;
+    border-bottom: 1px solid #1D2A9D;
 }
